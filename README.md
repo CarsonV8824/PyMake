@@ -2,11 +2,17 @@
 
 A more lightweight alternative to CMake
 
+## Problem
+
+I wanted a more simple version of CMake for making personal projects. All the tools that are for C++ feel outdated. I wanted a more modern tool for compiling C/C++.
+
 ## How to get
 
 - download the main.py file
 
 - download the PyMake.json file
+
+- run main.py
 
 ## settings in PyMake.json
 
