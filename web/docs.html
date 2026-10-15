@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">Home</a>
+        <a>About</a>
+        <a href="docs.html">Docs</a>
+        <a href="https://github.com/CarsonV8824/PyMake">GitHub</a>
+    </header>
+    <div class="center">
+        <h2>settings in PyMake.json</h2>
+        <ul>
+            <li> compiler : which c/c++ compiler to use</li>
+
+            <li> out: the name of file. if left blank, compiler with default to a.out if on linix</li>
+
+            <li> warnings : turns on flags to catch any warnings</li>
+
+            <li> libs : these are all libarys you want included. You do not need to include -l for them</li>
+
+            <li> version: which version to use for the compiler</li>
+
+            <li> wipe : deletes the executable before compiling code</li>
+
+            <li> file_types : the files that you want to compile (.cpp, .c, .h, .hpp)</li>
+        </ul>
+        <h2>Example Json format usuing raylib as the libary:</h2>
+        <pre><code>
+            {
+                "compiler": "g++",
+                "out": "game.out",
+                "warnings": false,
+                "libs": [
+                    "raylib",
+                    "GL",
+                    "m",
+                    "pthread",
+                    "dl",
+                    "rt",
+                    "X11"
+                ],
+                "version": "c++23",
+                "file_types": [
+                    ".cpp",
+                    ".c",
+                    ".hpp",
+                    ".h"
+                ],
+                "wipe": true
+            }
+        </code></pre>
+    </div>
+</body>
+
+</html>

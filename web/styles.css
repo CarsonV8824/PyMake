@@ -1,3 +1,7 @@
+:root {
+    --header-backround:#e1dedeea;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -7,8 +11,22 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.center {
+header {
+    background-color: var(--header-backround);
+    padding:20px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    gap:20px;
+}
+
+.center {
+    padding: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+}
+
+a {
+    color: inherit; 
+    text-decoration: none; 
 }
